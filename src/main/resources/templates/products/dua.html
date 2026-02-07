@@ -1,0 +1,234 @@
+<div th:fragment="content" class="product-detail">
+
+    <div class="container narrow">
+
+        <!-- BACK BUTTON -->
+        <a href="/products" class="back-btn">← Back to Products</a>
+
+        <!-- ================= TOP ================= -->
+        <div class="detail-grid">
+
+            <!-- GALLERY -->
+            <div class="gallery">
+
+                <img id="mainImage"
+                     src="/images/products/dua/dua1.jpg"
+                     class="main-image">
+
+                <div class="thumbs">
+
+                    <img th:each="i : ${#numbers.sequence(1,10)}"
+                         th:src="@{'/images/products/dua/dua' + ${i} + '.jpg'}"
+                         onclick="changeImg(this)">
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+            <div class="detail-info">
+
+                <h1 class="product-title">
+                    Coconut 
+                    <span class="title-vi">- Dừa Tươi</span>
+                </h1>
+
+                <p class="price">
+                    Contact for Price 
+                    <span class="title-vi">- Liên hệ báo giá</span>
+                </p>
+
+                <p class="short-desc">
+                    Vietnamese coconuts are prized worldwide for their naturally sweet water, rich nutrients, and refreshing taste. Grown in fertile coastal regions, our coconuts meet international export standards and ensure consistent quality.
+
+                    <span class="text-vi">
+                        Dừa Việt Nam được ưa chuộng trên toàn thế giới nhờ nước dừa ngọt tự nhiên, giàu dinh dưỡng và hương vị thanh mát. Được trồng tại các vùng đất ven biển màu mỡ, sản phẩm đáp ứng tiêu chuẩn xuất khẩu quốc tế với chất lượng đồng đều.
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="product-content-box">
+
+            <!-- OVERVIEW -->
+            <h2 class="main-title">
+                Overview of Coconut 
+                <span class="title-vi">- Tổng quan về dừa</span>
+            </h2>
+
+            <p>
+                Coconut is one of Vietnam’s key agricultural exports, valued for its versatility and nutritional benefits. Every part of the coconut can be utilized, from refreshing coconut water to rich, creamy flesh.
+
+                <span class="text-vi">
+                    Dừa là một trong những mặt hàng nông sản xuất khẩu quan trọng của Việt Nam, được đánh giá cao nhờ tính đa dụng và giá trị dinh dưỡng. Hầu hết mọi phần của quả dừa đều có thể sử dụng, từ nước dừa giải khát đến cơm dừa béo ngậy.
+                </span>
+            </p>
+
+            <p>
+                Harvested at the ideal maturity stage, Vietnamese coconuts offer excellent flavor, long shelf life, and strong transport durability for global distribution.
+
+                <span class="text-vi">
+                    Được thu hoạch ở độ trưởng thành lý tưởng, dừa Việt Nam mang lại hương vị tuyệt vời, thời gian bảo quản dài và khả năng vận chuyển tốt cho thị trường quốc tế.
+                </span>
+            </p>
+
+
+            <!-- INTRO -->
+            <h3 class="section-title">
+                1. Introduction 
+                <span class="title-vi">- Giới thiệu</span>
+            </h3>
+
+            <p>
+                Fresh coconuts feature a round shape with a green or brown outer husk depending on maturity. Inside, they contain naturally sweet coconut water and tender white flesh suitable for both beverages and culinary uses.
+
+                <span class="text-vi">
+                    Dừa tươi có hình tròn với lớp vỏ xanh hoặc nâu tùy theo độ già. Bên trong là nước dừa ngọt tự nhiên và phần cơm trắng mềm, thích hợp cho đồ uống cũng như chế biến món ăn.
+                </span>
+            </p>
+
+
+            <!-- SPEC -->
+            <h3 class="section-title">
+                2. Product Specifications 
+                <span class="title-vi">- Thông số sản phẩm</span>
+            </h3>
+
+            <table class="spec-table">
+
+                <tr>
+                    <th>Criteria<div class="text-vi">Tiêu chí</div></th>
+                    <th>Details<div class="text-vi">Chi tiết</div></th>
+                </tr>
+
+                <tr>
+                    <td>English Name<div class="text-vi">Tên tiếng Anh</div></td>
+                    <td>Coconut<div class="text-vi">Dừa</div></td>
+                </tr>
+
+                <tr>
+                    <td>Shape<div class="text-vi">Hình dạng</div></td>
+                    <td>Round or slightly oval<div class="text-vi">Tròn hoặc hơi bầu</div></td>
+                </tr>
+
+                <tr>
+                    <td>Skin Color<div class="text-vi">Màu vỏ</div></td>
+                    <td>Green or Brown<div class="text-vi">Xanh hoặc nâu</div></td>
+                </tr>
+
+                <tr>
+                    <td>Taste<div class="text-vi">Hương vị</div></td>
+                    <td>Naturally sweet and refreshing<div class="text-vi">Ngọt tự nhiên, thanh mát</div></td>
+                </tr>
+
+                <tr>
+                    <td>Average Weight<div class="text-vi">Trọng lượng trung bình</div></td>
+                    <td>1 – 1.5 kg<div class="text-vi">1 – 1.5 kg</div></td>
+                </tr>
+
+                <tr>
+                    <td>Harvest Season<div class="text-vi">Mùa vụ</div></td>
+                    <td>Available year-round<div class="text-vi">Thu hoạch quanh năm</div></td>
+                </tr>
+
+            </table>
+
+
+            <!-- USAGE -->
+            <h3 class="section-title">
+                3. Usage 
+                <span class="title-vi">- Cách sử dụng</span>
+            </h3>
+
+            <p>
+                Coconut is ideal for fresh drinking, smoothies, desserts, and cooking. Coconut milk and cream are widely used in both traditional and modern cuisines.
+
+                <span class="text-vi">
+                    Dừa thích hợp để uống tươi, làm sinh tố, món tráng miệng và chế biến thực phẩm. Nước cốt dừa được sử dụng phổ biến trong cả ẩm thực truyền thống và hiện đại.
+                </span>
+            </p>
+
+
+            <!-- BENEFITS -->
+            <h3 class="section-title">
+                4. Benefits 
+                <span class="title-vi">- Lợi ích</span>
+            </h3>
+
+            <ul class="feature-list">
+
+                <li><b>Excellent hydration</b>
+                    <div class="text-vi">Bổ sung nước hiệu quả.</div>
+                </li>
+
+                <li><b>Rich in electrolytes</b>
+                    <div class="text-vi">Giàu chất điện giải.</div>
+                </li>
+
+                <li><b>Supports heart health</b>
+                    <div class="text-vi">Tốt cho tim mạch.</div>
+                </li>
+
+                <li><b>Provides natural energy</b>
+                    <div class="text-vi">Cung cấp năng lượng tự nhiên.</div>
+                </li>
+
+            </ul>
+
+
+            <!-- STORAGE -->
+            <h3 class="section-title">
+                5. Storage 
+                <span class="title-vi">- Bảo quản</span>
+            </h3>
+
+            <p>
+                Store coconuts in a cool, dry place. Refrigeration is recommended after opening to maintain freshness and flavor.
+
+                <span class="text-vi">
+                    Bảo quản dừa ở nơi khô ráo, thoáng mát. Sau khi mở, nên giữ lạnh để duy trì độ tươi và hương vị.
+                </span>
+            </p>
+
+
+            <!-- COMPANY -->
+            <div class="company-box">
+
+                <h3>
+                    Supplier Information 
+                    <span class="title-vi">- Thông tin nhà cung cấp</span>
+                </h3>
+
+                <p>
+                    <b>Farm Nông Việt</b><br>
+                    We specialize in exporting premium Vietnamese agricultural products with strict quality control and reliable logistics.
+
+                    <span class="text-vi">
+                        Chúng tôi chuyên xuất khẩu nông sản Việt Nam chất lượng cao với quy trình kiểm soát nghiêm ngặt và hệ thống vận chuyển đáng tin cậy.
+                    </span>
+                </p>
+
+                <p><b>Address:</b> Thu Duc City, Ho Chi Minh, Vietnam</p>
+                <p><b>Phone:</b> +84 xxx xxx xxx</p>
+                <p><b>Email:</b> contact@bth.com</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function changeImg(el){
+            document.getElementById("mainImage").src = el.src;
+        }
+    </script>
+
+</div>

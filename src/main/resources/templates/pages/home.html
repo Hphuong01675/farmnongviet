@@ -1,0 +1,325 @@
+<div th:fragment="content">
+
+	<!-- ================= HERO ================= -->
+	<section class="hero-slider">
+
+		<div class="slide active">
+			<img th:src="@{/images/banners/hero1.jpg}">
+			<div class="hero-overlay">
+				<h1>Premium Vietnamese Fruits Exported Worldwide</h1>
+				<p>Delivering freshness, quality and reliability.</p>
+
+				<!-- FIX -->
+				<a href="/products" class="btn-primary"> Khám phá sản phẩm </a>
+			</div>
+		</div>
+
+		<div class="slide">
+			<img th:src="@{/images/banners/hero2.png}">
+		</div>
+
+		<div class="slide">
+			<img th:src="@{/images/banners/hero3.png}">
+		</div>
+
+	</section>
+
+
+	<!-- ================= HOT FRUITS ================= -->
+	<section class="home-hot">
+		<div class="container">
+
+			<h2 class="home-title">Trái Cây Nổi Bật</h2>
+
+			<div class="hot-wrapper">
+
+				<button class="hot-btn prev">&#10094;</button>
+
+				<div class="hot-slider">
+					<div class="hot-track">
+
+						<!-- FIX SLUG -->
+						<div class="hot-card" onclick="goDetail('chanh-khong-hat')">
+							<img th:src="@{/images/products/chanhkhonghat/chanh1.jpg}">
+							<h3>Chanh Không Hạt</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('ot')">
+							<img th:src="@{/images/products/ot/ot1.jpg}">
+							<h3>Ớt</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('thanh-long')">
+							<img th:src="@{/images/products/thanhlong/thanhlong1.jpg}">
+							<h3>Thanh Long</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('sau-rieng')">
+							<!-- FIX ảnh -->
+							<img th:src="@{/images/products/saurieng/sau1.jpg}">
+							<h3>Sầu Riêng</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('gung')">
+							<img th:src="@{/images/products/gung/gung6.jpg}">
+							<h3>Gừng</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('dua')">
+							<img th:src="@{/images/products/dua/dua1.jpg}">
+							<h3>Dừa</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('thom')">
+							<img th:src="@{/images/products/thom/thom4.jpg}">
+							<h3>Thơm</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+						<div class="hot-card" onclick="goDetail('tieu')">
+							<img th:src="@{/images/products/tieu/tieu1.jpg}">
+							<h3>Tiêu</h3>
+							<span>Giá: Liên hệ</span>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="hot-btn next">&#10095;</button>
+
+			</div>
+
+			<div class="hot-viewall">
+				<!-- FIX -->
+				<a href="/products" class="btn-outline"> Xem tất cả sản phẩm → </a>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- ================= FRUIT DETAIL ================= -->
+	<section class="home-fruit">
+		<div class="container">
+
+			<!-- CHANH -->
+			<div class="home-fruit-row">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/chanhkhonghat/chanh1.jpg}">
+				<div class="home-fruit-text">
+					<h2>Chanh Không Hạt</h2>
+					<p>Chanh không hạt, còn gọi là Persian Lime, là một trong những
+						loại trái cây có múi được ưa chuộng trên thị trường thế giới. Cây
+						thích nghi tốt với khí hậu nhiệt đới như Việt Nam và cho ra sản
+						phẩm chất lượng cao phục vụ xuất khẩu.</p>
+
+					<!-- FIX -->
+					<a href="/product/chanh-khong-hat" class="btn-primary">Xem thêm
+						→</a>
+				</div>
+			</div>
+
+
+			<!-- ỚT -->
+			<div class="home-fruit-row reverse">
+				<img class="home-fruit-img" th:src="@{/images/products/ot/ot1.jpg}">
+				<div class="home-fruit-text">
+					<h2>Ớt</h2>
+					<p>Ớt có hình dáng thon dài, vỏ bóng mịn và màu đỏ hoặc xanh tùy theo độ chín. Hương thơm mạnh cùng nhiều mức độ cay khác nhau giúp phù hợp với đa dạng món ăn.</p>
+
+					<a href="/product/ot" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+
+			<!-- GỪNG -->
+			<div class="home-fruit-row">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/gung/gung6.jpg}">
+				<div class="home-fruit-text">
+					<h2>Gừng</h2>
+					<p>Gừng tươi có hình dạng nhiều nhánh, vỏ màu nâu nhạt và ruột vàng. Hương vị cay nhẹ pha chút ngọt, trở nên thơm hơn khi được chế biến.</p>
+
+					<a href="/product/gung" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+
+			<!-- THANH LONG -->
+			<div class="home-fruit-row reverse">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/thanhlong/thanhlong1.jpg}">
+				<div class="home-fruit-text">
+					<h2>Thanh Long</h2>
+					<p>Thanh long có lớp vỏ hồng hoặc vàng rực rỡ với các tai xanh, phần ruột mềm chứa nhiều hạt nhỏ có thể ăn được. Vị ngọt nhẹ và thanh mát rất thích hợp để thưởng thức tươi.</p>
+
+					<a href="/product/thanh-long" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+
+			<!-- SẦU RIÊNG -->
+			<div class="home-fruit-row">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/saurieng/sau1.jpg}">
+				<div class="home-fruit-text">
+					<h2>Sầu Riêng</h2>
+					<p>Sầu riêng có kích thước lớn, hình bầu dục với lớp vỏ gai bao bọc phần cơm vàng óng bên trong. Hương vị béo ngậy, ngọt tự nhiên mang lại trải nghiệm thưởng thức đầy hấp dẫn.</p>
+
+					<a href="/product/sau-rieng" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+
+			<!-- DỪA -->
+			<div class="home-fruit-row reverse">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/dua/dua1.jpg}">
+				<div class="home-fruit-text">
+					<h2>Dừa</h2>
+					<p>Dừa tươi có hình tròn với lớp vỏ xanh hoặc nâu tùy theo độ
+						già. Bên trong là nước dừa ngọt tự nhiên và phần cơm trắng mềm,
+						thích hợp cho đồ uống cũng như chế biến món ăn.</p>
+
+					<a href="/product/dua" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+
+			<!-- THƠM -->
+			<div class="home-fruit-row">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/thom/thom4.jpg}">
+				<div class="home-fruit-text">
+					<h2>Thơm</h2>
+					<p>Dứa có phần ruột vàng óng, lớp vỏ ngoài đặc trưng và chóp lá xanh tươi. Hương vị cân bằng giữa ngọt và chua nhẹ cùng mùi thơm nhiệt đới hấp dẫn.</p>
+
+					<a href="/product/thom" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+
+			<!-- TIÊU -->
+			<div class="home-fruit-row reverse">
+				<img class="home-fruit-img"
+					th:src="@{/images/products/tieu/tieu1.jpg}">
+				<div class="home-fruit-text">
+					<h2>Tiêu</h2>
+					<p>Hạt tiêu là những quả mọng nhỏ hình tròn, chuyển sang màu đen khi được sấy khô. Chúng mang lại vị cay rõ rệt cùng hương thơm đặc trưng, giúp tăng hương vị cho nhiều món ăn.</p>
+
+					<a href="/product/tieu" class="btn-primary">Xem thêm →</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- ================= JS ================= -->
+	<script>
+
+    document.addEventListener("DOMContentLoaded", function(){
+
+        /* ================= HERO AUTO ================= */
+        const slides = document.querySelectorAll(".slide");
+        let heroIndex = 0;
+
+        if(slides.length > 0){
+            setInterval(()=>{
+                slides[heroIndex].classList.remove("active");
+                heroIndex = (heroIndex + 1) % slides.length;
+                slides[heroIndex].classList.add("active");
+            },5000);
+        }
+
+
+        /* ================= HOT SLIDER ================= */
+
+        const track = document.querySelector(".hot-track");
+        const cards = document.querySelectorAll(".hot-card");
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+
+        if(track && cards.length){
+
+            let index = 0;
+
+            function getVisibleCards(){
+                if(window.innerWidth < 768) return 1;
+                if(window.innerWidth < 1100) return 2;
+                return 3;
+            }
+
+            function moveSlider(){
+
+                const gap = 34; // giống CSS
+                const cardWidth = cards[0].offsetWidth + gap;
+                track.style.transform =
+                    `translateX(-${index * cardWidth}px)`;
+            }
+
+            /* NEXT */
+            nextBtn.addEventListener("click", ()=>{
+
+                const visible = getVisibleCards();
+
+                if(index >= cards.length - visible){
+                    index = 0;
+                }else{
+                    index++;
+                }
+
+                moveSlider();
+            });
+
+            /* PREV */
+            prevBtn.addEventListener("click", ()=>{
+
+                const visible = getVisibleCards();
+
+                if(index <= 0){
+                    index = cards.length - visible;
+                }else{
+                    index--;
+                }
+
+                moveSlider();
+            });
+
+            /* AUTO SLIDE */
+            setInterval(()=>{
+
+                const visible = getVisibleCards();
+
+                if(index >= cards.length - visible){
+                    index = 0;
+                }else{
+                    index++;
+                }
+
+                moveSlider();
+
+            },4000);
+
+
+            /* FIX resize */
+            window.addEventListener("resize", moveSlider);
+        }
+
+
+
+        /* ================= CLICK DETAIL ================= */
+        window.goDetail = function(slug){
+            window.location.href="/product/" + slug;
+        }
+
+    });
+    </script>
+
+</div>

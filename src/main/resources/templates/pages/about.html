@@ -1,0 +1,150 @@
+<div th:fragment="content">
+
+<section class="about-hero">
+
+    <div class="container">
+
+        <h1>
+            HÀNH TRÌNH ĐƯA TINH HOA ĐẤT VIỆT VƯƠN RA THẾ GIỚI
+        </h1>
+
+        <p>
+            Tại Farm Nông Việt, chúng tôi không chỉ xuất khẩu trái cây.
+            Chúng tôi mang theo niềm tự hào của nền nông nghiệp Việt Nam
+            đến với thị trường toàn cầu.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="about-story">
+
+    <div class="container about-grid">
+
+        <div>
+            <h2>Khát Vọng Của Chúng Tôi</h2>
+
+            <p>
+                Xuất phát từ những vùng nguyên liệu trù phú, Farm Nông Việt được xây dựng
+                để xóa bỏ mọi rào cản giữa nông dân Việt và thị trường quốc tế.
+                Những sản phẩm như <b>Sầu riêng, Thanh long, Xoài cát</b>
+                xứng đáng có mặt tại các kệ hàng cao cấp trên toàn thế giới.
+            </p>
+        </div>
+
+        <img src="/images/about-farm.jpg">
+
+    </div>
+
+</section>
+
+
+
+<section class="about-values">
+
+    <div class="container">
+
+        <h2 class="section-title">Giá Trị Khác Biệt</h2>
+
+        <div class="value-grid">
+
+            <div class="value-card">
+                <h3>Chất Lượng Vượt Ngưỡng</h3>
+                <p>
+                    Quy trình kiểm soát khắt khe đảm bảo mỗi sản phẩm xuất khẩu
+                    đều đạt độ hoàn hảo về hương vị và an toàn.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3>Công Nghệ Bảo Quản</h3>
+                <p>
+                    Giữ trọn độ tươi ngon “như vừa hái tại vườn”
+                    cho đến khi tới tay người tiêu dùng quốc tế.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3>Kết Nối Bền Vững</h3>
+                <p>
+                    Đồng hành cùng nông dân, hướng dẫn canh tác sạch
+                    để đảm bảo nguồn cung ổn định.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3>Nhập Khẩu Tinh Hoa</h3>
+                <p>
+                    Mang những loại trái cây thượng hạng thế giới
+                    về Việt Nam.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="about-vision">
+
+    <div class="container">
+
+        <h2>Tầm Nhìn 2030</h2>
+
+        <p>
+            Trở thành doanh nghiệp xuất nhập khẩu trái cây hàng đầu,
+            biểu tượng cho sự hiện đại và minh bạch của nông nghiệp Việt Nam.
+            Chúng tôi không chỉ bán hàng — chúng tôi kể câu chuyện
+            về một Việt Nam đổi mới và chất lượng.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="about-contact">
+
+    <div class="container">
+
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+
+        <div class="contact-box">
+
+            <strong th:text="${companyName}"></strong>
+
+            <p><b>📍 Địa chỉ:</b> <span th:text="${address}"></span></p>
+
+            <p>
+                <b>📞 Hotline:</b>
+                <a th:href="'tel:' + ${phone}"
+                   th:text="${phone}"></a>
+            </p>
+
+            <p>
+                <b>✉ Email:</b>
+                <a th:href="'mailto:' + ${email}"
+                   th:text="${email}"></a>
+            </p>
+
+            <p>
+                <b>🌐 Website:</b>
+                <a th:href="'https://' + ${website}"
+                   th:text="${website}"
+                   target="_blank"></a>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>

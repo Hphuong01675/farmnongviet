@@ -1,0 +1,234 @@
+<div th:fragment="content" class="product-detail">
+
+    <div class="container narrow">
+
+        <!-- BACK BUTTON -->
+        <a href="/products" class="back-btn">← Back to Products</a>
+
+        <!-- ================= TOP ================= -->
+        <div class="detail-grid">
+
+            <!-- GALLERY -->
+            <div class="gallery">
+
+                <img id="mainImage"
+                     src="/images/products/tieu/tieu1.jpg"
+                     class="main-image">
+
+                <div class="thumbs">
+
+                    <img th:each="i : ${#numbers.sequence(1,10)}"
+                         th:src="@{'/images/products/tieu/tieu' + ${i} + '.jpg'}"
+                         onclick="changeImg(this)">
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+            <div class="detail-info">
+
+                <h1 class="product-title">
+                    Black Pepper 
+                    <span class="title-vi">- Hồ Tiêu</span>
+                </h1>
+
+                <p class="price">
+                    Contact for Price 
+                    <span class="title-vi">- Liên hệ báo giá</span>
+                </p>
+
+                <p class="short-desc">
+                    Vietnamese black pepper is renowned worldwide for its strong aroma, bold spiciness, and high essential oil content. As one of the world’s leading pepper exporters, Vietnam delivers premium-grade pepper that meets strict international standards.
+
+                    <span class="text-vi">
+                        Hồ tiêu Việt Nam nổi tiếng toàn cầu nhờ hương thơm mạnh, vị cay đặc trưng và hàm lượng tinh dầu cao. Là một trong những quốc gia xuất khẩu tiêu hàng đầu thế giới, Việt Nam cung cấp sản phẩm chất lượng cao đáp ứng các tiêu chuẩn quốc tế khắt khe.
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="product-content-box">
+
+            <!-- OVERVIEW -->
+            <h2 class="main-title">
+                Overview of Black Pepper 
+                <span class="title-vi">- Tổng quan về hồ tiêu</span>
+            </h2>
+
+            <p>
+                Black pepper is often referred to as the “King of Spices” and plays an essential role in global cuisine. Vietnamese pepper is cultivated in nutrient-rich soil and tropical climates, resulting in dense, flavorful peppercorns.
+
+                <span class="text-vi">
+                    Hồ tiêu thường được gọi là “Vua của các loại gia vị” và giữ vai trò quan trọng trong ẩm thực toàn cầu. Tiêu Việt Nam được trồng trên vùng đất giàu dinh dưỡng và khí hậu nhiệt đới, tạo ra hạt tiêu chắc và đậm vị.
+                </span>
+            </p>
+
+            <p>
+                Carefully processed and dried, our pepper maintains its natural color, pungency, and long shelf life — ideal for export and large-scale food production.
+
+                <span class="text-vi">
+                    Được xử lý và phơi sấy cẩn thận, tiêu giữ được màu sắc tự nhiên, độ cay và thời gian bảo quản lâu — rất phù hợp cho xuất khẩu và sản xuất thực phẩm quy mô lớn.
+                </span>
+            </p>
+
+
+            <!-- INTRO -->
+            <h3 class="section-title">
+                1. Introduction 
+                <span class="title-vi">- Giới thiệu</span>
+            </h3>
+
+            <p>
+                Peppercorns are small, round berries that turn dark when dried. They deliver a sharp heat and complex aroma that enhances both savory and gourmet dishes.
+
+                <span class="text-vi">
+                    Hạt tiêu là những quả mọng nhỏ hình tròn, chuyển sang màu đen khi được sấy khô. Chúng mang lại vị cay rõ rệt cùng hương thơm đặc trưng, giúp tăng hương vị cho nhiều món ăn.
+                </span>
+            </p>
+
+
+            <!-- SPEC -->
+            <h3 class="section-title">
+                2. Product Specifications 
+                <span class="title-vi">- Thông số sản phẩm</span>
+            </h3>
+
+            <table class="spec-table">
+
+                <tr>
+                    <th>Criteria<div class="text-vi">Tiêu chí</div></th>
+                    <th>Details<div class="text-vi">Chi tiết</div></th>
+                </tr>
+
+                <tr>
+                    <td>English Name<div class="text-vi">Tên tiếng Anh</div></td>
+                    <td>Black Pepper<div class="text-vi">Hồ tiêu đen</div></td>
+                </tr>
+
+                <tr>
+                    <td>Color<div class="text-vi">Màu sắc</div></td>
+                    <td>Dark black<div class="text-vi">Đen đậm</div></td>
+                </tr>
+
+                <tr>
+                    <td>Flavor<div class="text-vi">Hương vị</div></td>
+                    <td>Strong, spicy, aromatic<div class="text-vi">Cay nồng, thơm</div></td>
+                </tr>
+
+                <tr>
+                    <td>Moisture<div class="text-vi">Độ ẩm</div></td>
+                    <td>≤ 12.5%<div class="text-vi">≤ 12.5%</div></td>
+                </tr>
+
+                <tr>
+                    <td>Processing<div class="text-vi">Chế biến</div></td>
+                    <td>Sun-dried or machine-dried<div class="text-vi">Phơi nắng hoặc sấy máy</div></td>
+                </tr>
+
+                <tr>
+                    <td>Harvest Season<div class="text-vi">Mùa vụ</div></td>
+                    <td>December – March<div class="text-vi">Tháng 12 – 3</div></td>
+                </tr>
+
+            </table>
+
+
+            <!-- USAGE -->
+            <h3 class="section-title">
+                3. Usage 
+                <span class="title-vi">- Cách sử dụng</span>
+            </h3>
+
+            <p>
+                Black pepper is widely used as a seasoning in cooking, marinades, sauces, and processed foods. It is also a key ingredient in spice blends worldwide.
+
+                <span class="text-vi">
+                    Hồ tiêu được sử dụng rộng rãi làm gia vị trong nấu ăn, ướp thực phẩm, nước sốt và các sản phẩm chế biến. Đây cũng là thành phần quan trọng trong nhiều hỗn hợp gia vị trên thế giới.
+                </span>
+            </p>
+
+
+            <!-- BENEFITS -->
+            <h3 class="section-title">
+                4. Benefits 
+                <span class="title-vi">- Lợi ích</span>
+            </h3>
+
+            <ul class="feature-list">
+
+                <li><b>Supports digestion</b>
+                    <div class="text-vi">Hỗ trợ tiêu hóa.</div>
+                </li>
+
+                <li><b>Rich in antioxidants</b>
+                    <div class="text-vi">Giàu chất chống oxy hóa.</div>
+                </li>
+
+                <li><b>Boosts metabolism</b>
+                    <div class="text-vi">Tăng cường trao đổi chất.</div>
+                </li>
+
+                <li><b>Enhances nutrient absorption</b>
+                    <div class="text-vi">Giúp hấp thụ dinh dưỡng tốt hơn.</div>
+                </li>
+
+            </ul>
+
+
+            <!-- STORAGE -->
+            <h3 class="section-title">
+                5. Storage 
+                <span class="title-vi">- Bảo quản</span>
+            </h3>
+
+            <p>
+                Store pepper in a cool, dry place away from direct sunlight. Keep sealed to preserve aroma and prevent moisture absorption.
+
+                <span class="text-vi">
+                    Bảo quản tiêu ở nơi khô ráo, thoáng mát và tránh ánh nắng trực tiếp. Đậy kín để giữ hương thơm và ngăn hút ẩm.
+                </span>
+            </p>
+
+
+            <!-- COMPANY -->
+            <div class="company-box">
+
+                <h3>
+                    Supplier Information 
+                    <span class="title-vi">- Thông tin nhà cung cấp</span>
+                </h3>
+
+                <p>
+                    <b>Farm Nông Việt</b><br>
+                    We specialize in exporting premium Vietnamese agricultural products with strict quality control and reliable logistics.
+
+                    <span class="text-vi">
+                        Chúng tôi chuyên xuất khẩu nông sản Việt Nam chất lượng cao với quy trình kiểm soát nghiêm ngặt và hệ thống vận chuyển đáng tin cậy.
+                    </span>
+                </p>
+
+                <p><b>Address:</b> Thu Duc City, Ho Chi Minh, Vietnam</p>
+                <p><b>Phone:</b> +84 xxx xxx xxx</p>
+                <p><b>Email:</b> contact@bth.com</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function changeImg(el){
+            document.getElementById("mainImage").src = el.src;
+        }
+    </script>
+
+</div>

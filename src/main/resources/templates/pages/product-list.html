@@ -1,0 +1,38 @@
+<div th:fragment="content">
+
+<section class="products-page">
+<div class="container">
+
+    <h1 class="page-title">
+        Các loại trái cây
+    </h1>
+
+    <div class="products-grid">
+
+        <a th:each="p : ${products}"
+           th:href="@{'/product/' + ${p.slug}}"
+           class="product-card">
+
+            <div class="product-img">
+                <img th:src="${p.image}" alt="">
+            </div>
+
+            <div class="product-info">
+
+                <h3 th:text="${p.name}"></h3>
+
+                <p class="price">
+                    Price:
+                    <span>Contact</span>
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</div>
+</section>
+
+</div>

@@ -1,0 +1,234 @@
+<div th:fragment="content" class="product-detail">
+
+    <div class="container narrow">
+
+        <!-- BACK BUTTON -->
+        <a href="/products" class="back-btn">← Back to Products</a>
+
+        <!-- ================= TOP ================= -->
+        <div class="detail-grid">
+
+            <!-- GALLERY -->
+            <div class="gallery">
+
+                <img id="mainImage"
+                     src="/images/products/gung/gung1.jpg"
+                     class="main-image">
+
+                <div class="thumbs">
+
+                    <img th:each="i : ${#numbers.sequence(1,10)}"
+                         th:src="@{'/images/products/gung/gung' + ${i} + '.jpg'}"
+                         onclick="changeImg(this)">
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+            <div class="detail-info">
+
+                <h1 class="product-title">
+                    Ginger 
+                    <span class="title-vi">- Gừng Tươi</span>
+                </h1>
+
+                <p class="price">
+                    Contact for Price 
+                    <span class="title-vi">- Liên hệ báo giá</span>
+                </p>
+
+                <p class="short-desc">
+                    Vietnamese ginger is widely recognized for its strong aroma, spicy flavor, and excellent freshness. Carefully cultivated and harvested, our ginger meets export-quality standards and is suitable for various international markets.
+
+                    <span class="text-vi">
+                        Gừng Việt Nam nổi bật với hương thơm mạnh, vị cay đặc trưng và độ tươi cao. Được trồng và thu hoạch theo quy trình kiểm soát chất lượng nghiêm ngặt, sản phẩm đáp ứng tiêu chuẩn xuất khẩu và phù hợp với nhiều thị trường quốc tế.
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="product-content-box">
+
+            <!-- OVERVIEW -->
+            <h2 class="main-title">
+                Overview of Ginger 
+                <span class="title-vi">- Tổng quan về gừng</span>
+            </h2>
+
+            <p>
+                Ginger is one of the most valuable spices in global cuisine and traditional medicine. Known for its warm, pungent taste and distinctive fragrance, ginger enhances both flavor and health benefits in a wide range of dishes.
+
+                <span class="text-vi">
+                    Gừng là một trong những loại gia vị quan trọng trong ẩm thực và y học truyền thống. Với vị cay ấm và hương thơm đặc trưng, gừng giúp tăng hương vị món ăn đồng thời mang lại nhiều lợi ích cho sức khỏe.
+                </span>
+            </p>
+
+            <p>
+                Grown in fertile soil under favorable tropical conditions, Vietnamese ginger develops firm flesh, thin skin, and high essential oil content, making it ideal for export and long-distance transportation.
+
+                <span class="text-vi">
+                    Được trồng trên vùng đất màu mỡ với điều kiện khí hậu thuận lợi, gừng Việt Nam có ruột chắc, vỏ mỏng và hàm lượng tinh dầu cao, rất thích hợp cho xuất khẩu và vận chuyển đường dài.
+                </span>
+            </p>
+
+
+            <!-- INTRO -->
+            <h3 class="section-title">
+                1. Introduction 
+                <span class="title-vi">- Giới thiệu</span>
+            </h3>
+
+            <p>
+                Fresh ginger features a knobby shape with light brown skin and yellow flesh. It offers a spicy yet slightly sweet flavor that becomes more aromatic when cooked.
+
+                <span class="text-vi">
+                    Gừng tươi có hình dạng nhiều nhánh, vỏ màu nâu nhạt và ruột vàng. Hương vị cay nhẹ pha chút ngọt, trở nên thơm hơn khi được chế biến.
+                </span>
+            </p>
+
+
+            <!-- SPEC -->
+            <h3 class="section-title">
+                2. Product Specifications 
+                <span class="title-vi">- Thông số sản phẩm</span>
+            </h3>
+
+            <table class="spec-table">
+
+                <tr>
+                    <th>Criteria<div class="text-vi">Tiêu chí</div></th>
+                    <th>Details<div class="text-vi">Chi tiết</div></th>
+                </tr>
+
+                <tr>
+                    <td>English Name<div class="text-vi">Tên tiếng Anh</div></td>
+                    <td>Ginger<div class="text-vi">Gừng</div></td>
+                </tr>
+
+                <tr>
+                    <td>Skin Color<div class="text-vi">Màu vỏ</div></td>
+                    <td>Light Brown<div class="text-vi">Nâu nhạt</div></td>
+                </tr>
+
+                <tr>
+                    <td>Flesh Color<div class="text-vi">Màu ruột</div></td>
+                    <td>Golden Yellow<div class="text-vi">Vàng đậm</div></td>
+                </tr>
+
+                <tr>
+                    <td>Flavor<div class="text-vi">Hương vị</div></td>
+                    <td>Spicy and aromatic<div class="text-vi">Cay và thơm</div></td>
+                </tr>
+
+                <tr>
+                    <td>Harvest Season<div class="text-vi">Mùa vụ</div></td>
+                    <td>Available year-round<div class="text-vi">Có quanh năm</div></td>
+                </tr>
+
+                <tr>
+                    <td>Shelf Life<div class="text-vi">Thời gian bảo quản</div></td>
+                    <td>Up to 2 months under proper storage<div class="text-vi">Tối đa 2 tháng nếu bảo quản đúng cách</div></td>
+                </tr>
+
+            </table>
+
+
+            <!-- USAGE -->
+            <h3 class="section-title">
+                3. Usage 
+                <span class="title-vi">- Cách sử dụng</span>
+            </h3>
+
+            <p>
+                Ginger is widely used in cooking, herbal teas, baked goods, and beverages. It is also a key ingredient in marinades and sauces thanks to its ability to remove strong odors and enhance flavor.
+
+                <span class="text-vi">
+                    Gừng được sử dụng phổ biến trong nấu ăn, pha trà, làm bánh và đồ uống. Ngoài ra, gừng còn là nguyên liệu quan trọng trong các món ướp và nước sốt nhờ khả năng khử mùi và tăng hương vị.
+                </span>
+            </p>
+
+
+            <!-- BENEFITS -->
+            <h3 class="section-title">
+                4. Benefits 
+                <span class="title-vi">- Lợi ích</span>
+            </h3>
+
+            <ul class="feature-list">
+
+                <li><b>Supports digestion</b>
+                    <div class="text-vi">Hỗ trợ tiêu hóa.</div>
+                </li>
+
+                <li><b>Helps reduce nausea and colds</b>
+                    <div class="text-vi">Giúp giảm buồn nôn và cảm lạnh.</div>
+                </li>
+
+                <li><b>Anti-inflammatory properties</b>
+                    <div class="text-vi">Có đặc tính chống viêm.</div>
+                </li>
+
+                <li><b>Boosts immunity</b>
+                    <div class="text-vi">Tăng cường hệ miễn dịch.</div>
+                </li>
+
+            </ul>
+
+
+            <!-- STORAGE -->
+            <h3 class="section-title">
+                5. Storage 
+                <span class="title-vi">- Bảo quản</span>
+            </h3>
+
+            <p>
+                Store ginger in a cool, dry place with good ventilation. Refrigeration is recommended to extend freshness and prevent moisture loss.
+
+                <span class="text-vi">
+                    Bảo quản gừng ở nơi khô ráo, thoáng mát. Có thể để trong tủ lạnh để kéo dài độ tươi và hạn chế mất nước.
+                </span>
+            </p>
+
+
+            <!-- COMPANY -->
+            <div class="company-box">
+
+                <h3>
+                    Supplier Information 
+                    <span class="title-vi">- Thông tin nhà cung cấp</span>
+                </h3>
+
+                <p>
+                    <b>Farm Nông Việt</b><br>
+                    We specialize in exporting premium Vietnamese agricultural products with strict quality control and reliable logistics.
+
+                    <span class="text-vi">
+                        Chúng tôi chuyên xuất khẩu nông sản Việt Nam chất lượng cao với quy trình kiểm soát nghiêm ngặt và hệ thống vận chuyển đáng tin cậy.
+                    </span>
+                </p>
+
+                <p><b>Address:</b> Thu Duc City, Ho Chi Minh, Vietnam</p>
+                <p><b>Phone:</b> +84 xxx xxx xxx</p>
+                <p><b>Email:</b> contact@bth.com</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function changeImg(el){
+            document.getElementById("mainImage").src = el.src;
+        }
+    </script>
+
+</div>

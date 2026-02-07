@@ -1,0 +1,234 @@
+<div th:fragment="content" class="product-detail">
+
+    <div class="container narrow">
+
+        <!-- BACK BUTTON -->
+        <a href="/products" class="back-btn">← Back to Products</a>
+
+        <!-- ================= TOP ================= -->
+        <div class="detail-grid">
+
+            <!-- GALLERY -->
+            <div class="gallery">
+
+                <img id="mainImage"
+                     src="/images/products/saurieng/saurieng1.jpg"
+                     class="main-image">
+
+                <div class="thumbs">
+
+                    <img th:each="i : ${#numbers.sequence(1,10)}"
+                         th:src="@{'/images/products/saurieng/saurieng' + ${i} + '.jpg'}"
+                         onclick="changeImg(this)">
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+            <div class="detail-info">
+
+                <h1 class="product-title">
+                    Durian 
+                    <span class="title-vi">- Sầu Riêng</span>
+                </h1>
+
+                <p class="price">
+                    Contact for Price 
+                    <span class="title-vi">- Liên hệ báo giá</span>
+                </p>
+
+                <p class="short-desc">
+                    Vietnamese durian is globally celebrated as the “King of Fruits,” prized for its rich flavor, creamy texture, and distinctive aroma. Cultivated in fertile regions and harvested at optimal maturity, our durians meet strict export standards.
+
+                    <span class="text-vi">
+                        Sầu riêng Việt Nam được mệnh danh là “Vua của các loại trái cây”, nổi bật với hương vị đậm đà, kết cấu béo mịn và mùi thơm đặc trưng. Được trồng tại những vùng đất màu mỡ và thu hoạch đúng độ chín, sản phẩm đáp ứng các tiêu chuẩn xuất khẩu khắt khe.
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="product-content-box">
+
+            <!-- OVERVIEW -->
+            <h2 class="main-title">
+                Overview of Durian 
+                <span class="title-vi">- Tổng quan về sầu riêng</span>
+            </h2>
+
+            <p>
+                Durian is one of Southeast Asia’s most valuable tropical fruits and a fast-growing export product of Vietnam. Known for its high nutritional value and unique taste, durian continues to gain popularity in international markets.
+
+                <span class="text-vi">
+                    Sầu riêng là một trong những loại trái cây nhiệt đới có giá trị cao tại Đông Nam Á và đang trở thành mặt hàng xuất khẩu phát triển mạnh của Việt Nam. Với giá trị dinh dưỡng cao và hương vị độc đáo, sầu riêng ngày càng được ưa chuộng trên thị trường quốc tế.
+                </span>
+            </p>
+
+            <p>
+                Vietnamese durians are carefully selected to ensure thick flesh, small seeds, and consistent quality — ideal for long-distance transportation.
+
+                <span class="text-vi">
+                    Sầu riêng Việt Nam được tuyển chọn kỹ lưỡng nhằm đảm bảo cơm dày, hạt lép và chất lượng đồng đều — rất phù hợp cho vận chuyển đường dài.
+                </span>
+            </p>
+
+
+            <!-- INTRO -->
+            <h3 class="section-title">
+                1. Introduction 
+                <span class="title-vi">- Giới thiệu</span>
+            </h3>
+
+            <p>
+                Durian features a large oval shape with a spiky outer shell protecting its soft, golden-yellow flesh. The taste is rich, buttery, and naturally sweet, offering a luxurious eating experience.
+
+                <span class="text-vi">
+                    Sầu riêng có kích thước lớn, hình bầu dục với lớp vỏ gai bao bọc phần cơm vàng óng bên trong. Hương vị béo ngậy, ngọt tự nhiên mang lại trải nghiệm thưởng thức đầy hấp dẫn.
+                </span>
+            </p>
+
+
+            <!-- SPEC -->
+            <h3 class="section-title">
+                2. Product Specifications 
+                <span class="title-vi">- Thông số sản phẩm</span>
+            </h3>
+
+            <table class="spec-table">
+
+                <tr>
+                    <th>Criteria<div class="text-vi">Tiêu chí</div></th>
+                    <th>Details<div class="text-vi">Chi tiết</div></th>
+                </tr>
+
+                <tr>
+                    <td>English Name<div class="text-vi">Tên tiếng Anh</div></td>
+                    <td>Durian<div class="text-vi">Sầu riêng</div></td>
+                </tr>
+
+                <tr>
+                    <td>Flesh Color<div class="text-vi">Màu cơm</div></td>
+                    <td>Golden Yellow<div class="text-vi">Vàng óng</div></td>
+                </tr>
+
+                <tr>
+                    <td>Texture<div class="text-vi">Kết cấu</div></td>
+                    <td>Creamy and smooth<div class="text-vi">Béo mịn</div></td>
+                </tr>
+
+                <tr>
+                    <td>Taste<div class="text-vi">Hương vị</div></td>
+                    <td>Rich, sweet, and buttery<div class="text-vi">Đậm đà, ngọt và béo</div></td>
+                </tr>
+
+                <tr>
+                    <td>Average Weight<div class="text-vi">Trọng lượng trung bình</div></td>
+                    <td>2 – 4 kg<div class="text-vi">2 – 4 kg</div></td>
+                </tr>
+
+                <tr>
+                    <td>Harvest Season<div class="text-vi">Mùa vụ</div></td>
+                    <td>Mainly May – September<div class="text-vi">Chủ yếu từ tháng 5 – 9</div></td>
+                </tr>
+
+            </table>
+
+
+            <!-- USAGE -->
+            <h3 class="section-title">
+                3. Usage 
+                <span class="title-vi">- Cách sử dụng</span>
+            </h3>
+
+            <p>
+                Durian is commonly enjoyed fresh or used in desserts, cakes, ice cream, smoothies, and confectionery products. It is also increasingly processed for frozen export markets.
+
+                <span class="text-vi">
+                    Sầu riêng thường được ăn tươi hoặc dùng trong các món tráng miệng, bánh, kem, sinh tố và kẹo. Ngoài ra còn được cấp đông để phục vụ thị trường xuất khẩu.
+                </span>
+            </p>
+
+
+            <!-- BENEFITS -->
+            <h3 class="section-title">
+                4. Benefits 
+                <span class="title-vi">- Lợi ích</span>
+            </h3>
+
+            <ul class="feature-list">
+
+                <li><b>High in energy and nutrients</b>
+                    <div class="text-vi">Giàu năng lượng và dinh dưỡng.</div>
+                </li>
+
+                <li><b>Contains healthy fats</b>
+                    <div class="text-vi">Chứa chất béo tốt.</div>
+                </li>
+
+                <li><b>Rich in fiber</b>
+                    <div class="text-vi">Giàu chất xơ.</div>
+                </li>
+
+                <li><b>Supports overall wellness</b>
+                    <div class="text-vi">Hỗ trợ sức khỏe tổng thể.</div>
+                </li>
+
+            </ul>
+
+
+            <!-- STORAGE -->
+            <h3 class="section-title">
+                5. Storage 
+                <span class="title-vi">- Bảo quản</span>
+            </h3>
+
+            <p>
+                Store durians in a cool, dry area. Once opened, keep refrigerated and consume promptly to maintain flavor and freshness.
+
+                <span class="text-vi">
+                    Bảo quản sầu riêng ở nơi khô ráo, thoáng mát. Sau khi tách vỏ, nên giữ lạnh và sử dụng sớm để đảm bảo hương vị.
+                </span>
+            </p>
+
+
+            <!-- COMPANY -->
+            <div class="company-box">
+
+                <h3>
+                    Supplier Information 
+                    <span class="title-vi">- Thông tin nhà cung cấp</span>
+                </h3>
+
+                <p>
+                    <b>Farm Nông Việt</b><br>
+                    We specialize in exporting premium Vietnamese agricultural products with strict quality control and reliable logistics.
+
+                    <span class="text-vi">
+                        Chúng tôi chuyên xuất khẩu nông sản Việt Nam chất lượng cao với quy trình kiểm soát nghiêm ngặt và hệ thống vận chuyển đáng tin cậy.
+                    </span>
+                </p>
+
+                <p><b>Address:</b> Thu Duc City, Ho Chi Minh, Vietnam</p>
+                <p><b>Phone:</b> +84 xxx xxx xxx</p>
+                <p><b>Email:</b> contact@bth.com</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function changeImg(el){
+            document.getElementById("mainImage").src = el.src;
+        }
+    </script>
+
+</div>

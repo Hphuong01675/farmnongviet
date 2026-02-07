@@ -1,0 +1,75 @@
+<div th:fragment="content">
+
+<section class="contact-page">
+
+    <div class="container contact-grid">
+
+        <!-- LEFT -->
+        <div class="contact-info">
+
+            <h1>Liên hệ với chúng tôi</h1>
+
+            <p class="contact-desc">
+                Farm Nông Việt luôn sẵn sàng hỗ trợ quý khách về báo giá,
+                hợp tác và xuất khẩu nông sản. Hãy liên hệ ngay để được tư vấn nhanh chóng.
+            </p>
+
+
+            <div class="contact-box">
+
+                <strong th:text="${companyName}">
+                    Farm Nông Việt
+                </strong>
+
+                <p>
+                    <b>📍 Địa chỉ:</b><br>
+                    <span th:text="${address}"></span>
+                </p>
+
+                <p>
+                    <b>📞 Số điện thoại:</b>
+                    <a th:href="'tel:' + ${phone}"
+                       th:text="${phone}"></a>
+                </p>
+
+                <p>
+                    <b>Zalo:</b>
+                    <a th:href="'https://zalo.me/' + ${phone}"
+                       target="_blank"
+                       th:text="${phone}"></a>
+                </p>
+
+                <p>
+                    <b>✉ Email:</b>
+                    <a th:href="'mailto:' + ${email}"
+                       th:text="${email}"></a>
+                </p>
+
+                <p>
+                    <b>🌐 Website:</b>
+                    <a th:href="'https://' + ${website}"
+                       target="_blank"
+                       th:text="${website}"></a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT -->
+        <div class="contact-map">
+
+            <iframe
+                src="https://maps.google.com/maps?q=Thu%20Duc%20City&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>

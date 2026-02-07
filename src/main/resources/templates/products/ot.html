@@ -1,0 +1,234 @@
+<div th:fragment="content" class="product-detail">
+
+    <div class="container narrow">
+
+        <!-- BACK BUTTON -->
+        <a href="/products" class="back-btn">← Back to Products</a>
+
+        <!-- ================= TOP ================= -->
+        <div class="detail-grid">
+
+            <!-- GALLERY -->
+            <div class="gallery">
+
+                <img id="mainImage"
+                     src="/images/products/ot/ot1.jpg"
+                     class="main-image">
+
+                <div class="thumbs">
+
+                    <img th:each="i : ${#numbers.sequence(1,10)}"
+                         th:src="@{'/images/products/ot/ot' + ${i} + '.jpg'}"
+                         onclick="changeImg(this)">
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+            <div class="detail-info">
+
+                <h1 class="product-title">
+                    Chili Pepper 
+                    <span class="title-vi">- Ớt Tươi</span>
+                </h1>
+
+                <p class="price">
+                    Contact for Price 
+                    <span class="title-vi">- Liên hệ báo giá</span>
+                </p>
+
+                <p class="short-desc">
+                    Vietnamese chili peppers are highly appreciated in international markets for their vibrant color, strong heat, and distinctive flavor. Carefully cultivated and harvested, our chilies meet strict export standards.
+
+                    <span class="text-vi">
+                        Ớt Việt Nam được thị trường quốc tế đánh giá cao nhờ màu sắc tươi sáng, độ cay mạnh và hương vị đặc trưng. Sản phẩm được canh tác và thu hoạch cẩn thận, đáp ứng các tiêu chuẩn xuất khẩu nghiêm ngặt.
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="product-content-box">
+
+            <!-- OVERVIEW -->
+            <h2 class="main-title">
+                Overview of Chili Pepper 
+                <span class="title-vi">- Tổng quan về ớt</span>
+            </h2>
+
+            <p>
+                Chili peppers are an essential ingredient in cuisines around the world, known for their spicy kick and ability to enhance flavors. Vietnam’s tropical climate provides ideal growing conditions, resulting in chilies with excellent quality and consistent pungency.
+
+                <span class="text-vi">
+                    Ớt là gia vị quan trọng trong ẩm thực toàn cầu, nổi bật với vị cay và khả năng làm tăng hương vị món ăn. Khí hậu nhiệt đới của Việt Nam tạo điều kiện lý tưởng để trồng ớt chất lượng cao với độ cay ổn định.
+                </span>
+            </p>
+
+            <p>
+                Our chili peppers are cultivated using modern agricultural practices to ensure food safety, freshness, and long shelf life during transportation.
+
+                <span class="text-vi">
+                    Ớt được trồng theo quy trình nông nghiệp hiện đại nhằm đảm bảo an toàn thực phẩm, độ tươi và thời gian bảo quản dài khi vận chuyển.
+                </span>
+            </p>
+
+
+            <!-- INTRO -->
+            <h3 class="section-title">
+                1. Introduction 
+                <span class="title-vi">- Giới thiệu</span>
+            </h3>
+
+            <p>
+                Chili peppers feature a slender shape, glossy skin, and vibrant red or green color depending on maturity. They offer a strong aroma and varying heat levels suitable for different culinary applications.
+
+                <span class="text-vi">
+                    Ớt có hình dáng thon dài, vỏ bóng mịn và màu đỏ hoặc xanh tùy theo độ chín. Hương thơm mạnh cùng nhiều mức độ cay khác nhau giúp phù hợp với đa dạng món ăn.
+                </span>
+            </p>
+
+
+            <!-- SPEC -->
+            <h3 class="section-title">
+                2. Product Specifications 
+                <span class="title-vi">- Thông số sản phẩm</span>
+            </h3>
+
+            <table class="spec-table">
+
+                <tr>
+                    <th>Criteria<div class="text-vi">Tiêu chí</div></th>
+                    <th>Details<div class="text-vi">Chi tiết</div></th>
+                </tr>
+
+                <tr>
+                    <td>English Name<div class="text-vi">Tên tiếng Anh</div></td>
+                    <td>Chili Pepper<div class="text-vi">Ớt</div></td>
+                </tr>
+
+                <tr>
+                    <td>Color<div class="text-vi">Màu sắc</div></td>
+                    <td>Green or Red<div class="text-vi">Xanh hoặc đỏ</div></td>
+                </tr>
+
+                <tr>
+                    <td>Shape<div class="text-vi">Hình dạng</div></td>
+                    <td>Slender and elongated<div class="text-vi">Thon dài</div></td>
+                </tr>
+
+                <tr>
+                    <td>Taste<div class="text-vi">Hương vị</div></td>
+                    <td>Hot and pungent<div class="text-vi">Cay nồng</div></td>
+                </tr>
+
+                <tr>
+                    <td>Harvest Season<div class="text-vi">Mùa vụ</div></td>
+                    <td>Available year-round<div class="text-vi">Có quanh năm</div></td>
+                </tr>
+
+                <tr>
+                    <td>Shelf Life<div class="text-vi">Thời gian bảo quản</div></td>
+                    <td>2–3 weeks under proper storage<div class="text-vi">2–3 tuần nếu bảo quản đúng cách</div></td>
+                </tr>
+
+            </table>
+
+
+            <!-- USAGE -->
+            <h3 class="section-title">
+                3. Usage 
+                <span class="title-vi">- Cách sử dụng</span>
+            </h3>
+
+            <p>
+                Chili peppers are widely used in sauces, marinades, stir-fries, and spice blends. They can be consumed fresh, dried, or processed into powder for long-term use.
+
+                <span class="text-vi">
+                    Ớt được sử dụng rộng rãi trong nước chấm, món xào, ướp gia vị và hỗn hợp gia vị. Có thể dùng tươi, phơi khô hoặc xay thành bột để bảo quản lâu dài.
+                </span>
+            </p>
+
+
+            <!-- BENEFITS -->
+            <h3 class="section-title">
+                4. Benefits 
+                <span class="title-vi">- Lợi ích</span>
+            </h3>
+
+            <ul class="feature-list">
+
+                <li><b>Boosts metabolism</b>
+                    <div class="text-vi">Giúp tăng cường trao đổi chất.</div>
+                </li>
+
+                <li><b>Rich in Vitamin C</b>
+                    <div class="text-vi">Giàu Vitamin C.</div>
+                </li>
+
+                <li><b>Supports immune health</b>
+                    <div class="text-vi">Hỗ trợ hệ miễn dịch.</div>
+                </li>
+
+                <li><b>Enhances appetite</b>
+                    <div class="text-vi">Kích thích vị giác.</div>
+                </li>
+
+            </ul>
+
+
+            <!-- STORAGE -->
+            <h3 class="section-title">
+                5. Storage 
+                <span class="title-vi">- Bảo quản</span>
+            </h3>
+
+            <p>
+                Store in a cool, dry place or refrigerate to maintain freshness. Avoid direct sunlight and moisture to preserve quality during transportation.
+
+                <span class="text-vi">
+                    Bảo quản nơi khô ráo, thoáng mát hoặc trong ngăn mát tủ lạnh để giữ độ tươi. Tránh ánh nắng trực tiếp và độ ẩm cao.
+                </span>
+            </p>
+
+
+            <!-- COMPANY -->
+            <div class="company-box">
+
+                <h3>
+                    Supplier Information 
+                    <span class="title-vi">- Thông tin nhà cung cấp</span>
+                </h3>
+
+                <p>
+                    <b>Farm Nông Việt</b><br>
+                    We specialize in exporting premium Vietnamese agricultural products with strict quality control and reliable logistics.
+
+                    <span class="text-vi">
+                        Chúng tôi chuyên xuất khẩu nông sản Việt Nam chất lượng cao với quy trình kiểm soát nghiêm ngặt và hệ thống vận chuyển đáng tin cậy.
+                    </span>
+                </p>
+
+                <p><b>Address:</b> Thu Duc City, Ho Chi Minh, Vietnam</p>
+                <p><b>Phone:</b> +84 xxx xxx xxx</p>
+                <p><b>Email:</b> contact@bth.com</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function changeImg(el){
+            document.getElementById("mainImage").src = el.src;
+        }
+    </script>
+
+</div>

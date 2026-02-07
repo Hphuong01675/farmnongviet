@@ -1,0 +1,13 @@
+<div th:fragment="content" class="product-detail-page">
+
+    <section class="product-body">
+        <div class="container">
+
+            <div class="product-wrapper"
+                 th:replace="${contentTemplate} :: content">
+            </div>
+
+        </div>
+    </section>
+
+</div>
