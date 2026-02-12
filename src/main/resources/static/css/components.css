@@ -1994,3 +1994,202 @@ p{
 }
 
 }
+/* =====================================================
+        LAPTOP / SMALL DESKTOP
+   1025px → 1400px
+===================================================== */
+
+@media (min-width:1025px) and (max-width:1400px){
+
+/* ========= GLOBAL ========= */
+
+.container,
+.narrow{
+    max-width:1180px;
+    margin:auto;
+    padding-left:28px;
+    padding-right:28px;
+}
+
+/* tránh text quá to gây vỡ */
+h1{ font-size:44px; }
+h2{ font-size:36px; }
+
+
+
+/* ========= HERO ========= */
+
+.hero-slider{
+    height:520px;
+}
+
+.hero-overlay{
+    bottom:90px;
+    max-width:460px;
+}
+
+.hero-overlay h1{
+    font-size:42px;
+}
+
+.hero-overlay p{
+    font-size:17px;
+}
+
+
+
+/* ========= HOT PRODUCTS ========= */
+
+.hot-track{
+    gap:20px;
+}
+
+/* 🔥 từ 3 card → 2 card */
+.hot-card{
+    flex:0 0 calc((100% - 20px)/2);
+    padding:18px;
+}
+
+.hot-card img{
+    height:220px;
+}
+
+.hot-btn{
+    width:50px;
+    height:50px;
+}
+
+
+
+/* ========= FRUIT SECTION ========= */
+
+.home-fruit{
+    padding:90px 30px;
+}
+
+.home-fruit-row{
+    gap:50px;
+    max-width:1100px;
+}
+
+.fruit-title{
+    font-size:38px;
+}
+
+.fruit-desc{
+    font-size:17px;
+}
+
+
+
+/* ========= CTA ========= */
+
+.cta-box{
+    max-width:760px;
+    padding:60px 50px;
+}
+
+.cta-box h2{
+    font-size:40px;
+}
+
+.cta-box p{
+    font-size:18px;
+}
+
+
+
+/* ========= CONTACT ========= */
+
+.contact-grid{
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+}
+
+.contact-info h1{
+    font-size:40px;
+}
+
+.contact-box{
+    padding:34px;
+}
+
+
+
+/* ========= PRODUCTS PAGE ========= */
+
+/* 🔥 QUAN TRỌNG — laptop không nên 3 card */
+.products-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:34px;
+}
+
+.product-img{
+    height:230px;
+}
+
+.page-title{
+    font-size:42px;
+}
+
+
+
+/* ========= ABOUT ========= */
+
+.about-hero{
+    padding:140px 40px;
+}
+
+.about-hero h1{
+    font-size:44px;
+}
+
+.value-grid{
+    grid-template-columns:repeat(2,1fr); /* thay vì 4 */
+    gap:32px;
+}
+
+.value-card{
+    padding:30px;
+}
+
+.about-grid{
+    gap:60px;
+}
+
+
+
+/* ========= PRODUCT DETAIL ========= */
+
+.detail-grid{
+    grid-template-columns:1fr 1fr;
+    gap:50px; /* giảm từ 80px -> tránh tràn */
+}
+
+.product-title{
+    font-size:42px;
+}
+
+.main-title{
+    font-size:34px;
+}
+
+.section-title{
+    font-size:26px;
+}
+
+.product-content-box{
+    padding:50px;
+}
+
+/* thumbs nhỏ lại kẻo ép layout */
+.thumbs img{
+    width:75px;
+    height:75px;
+}
+
+.spec-table{
+    font-size:17px;
+}
+
+}
