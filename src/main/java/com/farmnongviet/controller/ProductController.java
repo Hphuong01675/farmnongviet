@@ -17,10 +17,11 @@ public class ProductController {
         List<Product> products = List.of(
 
             new Product("chanh-khong-hat","Chanh Không Hạt","/images/products/chanhkhonghat/chanh1.jpg"),
+            new Product("dua","Dừa","/images/products/dua/dua1.jpg"),
             new Product("ot","Ớt","/images/products/ot/ot1.jpg"),
             new Product("gung","Gừng","/images/products/gung/gung6.jpg"),
             new Product("thanh-long","Thanh Long","/images/products/thanhlong/thanhlong1.jpg"),
-            new Product("dua","Dừa","/images/products/dua/dua1.jpg"),
+            
             new Product("thom","Thơm (Dứa)","/images/products/thom/thom4.jpg"),
             new Product("sau-rieng","Sầu Riêng","/images/products/saurieng/sau1.jpg"),
             new Product("tieu","Tiêu","/images/products/tieu/tieu1.jpg")

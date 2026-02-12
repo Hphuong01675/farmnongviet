@@ -2,67 +2,83 @@
 <html lang="vi" xmlns:th="http://www.thymeleaf.org">
 <head>
 
-    <!-- META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- META -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FarmNongViet - Premium Fruits Export</title>
-    <meta name="description"
-          content="FarmNongViet - Trusted Vietnamese agricultural exporter delivering premium fruits worldwide.">
+<title>FarmNongViet - Premium Fruits Export</title>
+<meta name="description"
+	content="FarmNongViet - Trusted Vietnamese agricultural exporter delivering premium fruits worldwide.">
 
-    <link rel="icon" th:href="@{/images/logo.jpg}">
+<link rel="icon" th:href="@{/images/logo.jpg}">
 
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+	rel="stylesheet">
 
-    <!-- ================= CSS ORDER (CỰC QUAN TRỌNG) ================= -->
+<!-- ================= CSS ORDER (CỰC QUAN TRỌNG) ================= -->
 
-    <!-- 1. Layout -->
-    <link rel="stylesheet" th:href="@{/css/layout.css}">
+<!-- 1. Layout -->
+<link rel="stylesheet" th:href="@{/css/layout.css}">
 
-    <!-- 2. Design system -->
-    <link rel="stylesheet" th:href="@{/css/main.css}">
+<!-- 2. Design system -->
+<link rel="stylesheet" th:href="@{/css/main.css}">
 
-    <!-- 3. Components / Pages -->
-    <link rel="stylesheet" th:href="@{/css/components.css}">
+<!-- 3. Components / Pages -->
+<link rel="stylesheet" th:href="@{/css/components.css}">
 
 </head>
 
 
 <body>
 
-<!-- HEADER -->
-<th:block th:replace="fragments/header :: header"></th:block>
+	<!-- HEADER -->
+	<th:block th:replace="fragments/header :: header"></th:block>
 
 
-<!-- MAIN -->
-<main th:replace="${content} :: content"></main>
+	<!-- MAIN -->
+	<main th:replace="${content} :: content"></main>
 
 
-<!-- FOOTER -->
-<footer th:replace="fragments/footer :: footer"></footer>
+	<!-- FOOTER -->
+	<footer th:replace="fragments/footer :: footer"></footer>
 
 
-<!-- FLOATING SOCIAL -->
-<div class="floating-social">
+	<!-- FLOATING SOCIAL -->
+	<div class="floating-social">
 
-    <a href="https://zalo.me/84798164267" target="_blank">
-        <img th:src="@{/images/icons/zalo.png}" alt="Zalo">
-    </a>
+		<a href="https://zalo.me/84798164267" target="_blank"> <img
+			th:src="@{/images/icons/zalo.png}" alt="Zalo">
+		</a> <a href="https://www.facebook.com/phuong.hoai.776984/"
+			target="_blank"> <img th:src="@{/images/icons/facebook.png}"
+			alt="Facebook">
+		</a> <a href="https://wa.me/84798164267" target="_blank"> <img
+			th:src="@{/images/icons/whatsapp.png}" alt="WhatsApp">
+		</a>
 
-    <a href="https://www.facebook.com/phuong.hoai.776984/" target="_blank">
-        <img th:src="@{/images/icons/facebook.png}" alt="Facebook">
-    </a>
+	</div>
+	<script>
+document.addEventListener("DOMContentLoaded", function(){
 
-    <a href="https://wa.me/84798164267" target="_blank">
-        <img th:src="@{/images/icons/whatsapp.png}" alt="WhatsApp">
-    </a>
+    const burger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
 
-</div>
+    burger.addEventListener('click', function(e){
+        e.stopPropagation();
+        menu.classList.toggle('active');
+    });
 
+    document.addEventListener('click', function(e){
+        if(!menu.contains(e.target) && !burger.contains(e.target)){
+            menu.classList.remove('active');
+        }
+    });
+
+});
+</script>
 </body>
 </html>

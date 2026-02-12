@@ -35,7 +35,7 @@
             </p>
         </div>
 
-        <img src="/images/about-farm.jpg">
+        <img src="/images/Logo.jpg">
 
     </div>
 
@@ -113,29 +113,26 @@
 <section class="about-contact">
 
     <div class="container">
-
-        <h2>Liên Hệ Với Chúng Tôi</h2>
-
         <div class="contact-box">
 
             <strong th:text="${companyName}"></strong>
 
-            <p><b>📍 Địa chỉ:</b> <span th:text="${address}"></span></p>
+            <p><b>Địa chỉ:</b> <span th:text="${address}"></span></p>
 
             <p>
-                <b>📞 Hotline:</b>
+                <b>Hotline:</b>
                 <a th:href="'tel:' + ${phone}"
                    th:text="${phone}"></a>
             </p>
 
             <p>
-                <b>✉ Email:</b>
+                <b>Email:</b>
                 <a th:href="'mailto:' + ${email}"
                    th:text="${email}"></a>
             </p>
 
             <p>
-                <b>🌐 Website:</b>
+                <b>Website:</b>
                 <a th:href="'https://' + ${website}"
                    th:text="${website}"
                    target="_blank"></a>

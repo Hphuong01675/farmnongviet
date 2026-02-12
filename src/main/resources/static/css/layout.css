@@ -525,26 +525,94 @@ body{
 }
 
 
+.hamburger{
+    display:none;
+    width:28px;
+    cursor:pointer;
+}
 
-/* =====================================
-            MOBILE
-===================================== */
+.hamburger span{
+    display:block;
+    height:3px;
+    background:#333;
+    margin:6px 0;
+    border-radius:3px;
+    transition:.3s;
+}
+
+/* ================= FOOTER IPAD ================= */
+
+@media(max-width:1024px){
+
+.footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:36px;
+    padding:60px 0;
+}
+
+/* giảm font */
+.footer-logo-text{
+    font-size:22px;
+}
+
+.footer h3{
+    font-size:18px;
+}
+
+.footer a,
+.footer-company{
+    font-size:15.5px;
+}
+
+/* map thấp lại */
+.footer iframe{
+    height:220px;
+}
+
+}
+/* ================= FOOTER MOBILE ================= */
 
 @media(max-width:768px){
 
-    .floating-social{
-        right:14px;
-        gap:16px;
-    }
+.footer-grid{
+    grid-template-columns:1fr;
+    gap:26px;
+    padding:50px 0;
+    text-align:center;
+}
 
-    .floating-social a{
-        width:58px;
-        height:58px;
-    }
+/* container sát hơn */
+.footer .container{
+    padding:0 18px;
+}
 
-    .floating-social img{
-        width:26px;
-        height:26px;
-    }
+/* logo */
+.footer-logo-text{
+    font-size:20px;
+}
+
+/* titles */
+.footer h3{
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+/* text */
+.footer a,
+.footer-company{
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* map nhỏ lại */
+.footer iframe{
+    height:200px;
+}
+
+/* bottom */
+.footer-bottom{
+    font-size:14px;
+    padding:16px;
+}
 
 }

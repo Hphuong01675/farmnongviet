@@ -1,37 +1,43 @@
 <th:block th:fragment="header">
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="top-corporate">
-            <div class="container corporate-inner">
+<header class="header">
 
-                <div class="corp-logo">
-                    <img th:src="@{/images/Logo.png}" alt="FarmNongViet">
-                </div>
+    <!-- TOP CORPORATE (Desktop) -->
+    <div class="top-corporate">
+        <div class="container corporate-inner">
 
-                <div class="corp-center">
-                    <h1 class="corp-title">FARM NÔNG VIỆT</h1>
-
-                    <p class="corp-address">
-                        83/19 Đường 22, Phường Phước Long B,
-                        TP. Thủ Đức, TP. Hồ Chí Minh
-                    </p>
-                </div>
-
-                <div class="corp-contact">
-                    <span>WhatsApp Doanh Nghiệp</span>
-                    <strong>+84 798 164 267</strong>
-                </div>
-
+            <div class="corp-logo">
+                <img th:src="@{/images/Logo.png}" alt="FarmNongViet">
             </div>
+
+            <div class="corp-center">
+                <h1 class="corp-title">FARM NÔNG VIỆT</h1>
+                <p class="corp-address">
+                    83/19 Đường 22, Phường Phước Long B,
+                    TP. Thủ Đức, TP. Hồ Chí Minh
+                </p>
+            </div>
+
+            <div class="corp-contact">
+                <span>WhatsApp Doanh Nghiệp</span>
+                <strong>+84 798 164 267</strong>
+            </div>
+
         </div>
-    </header>
+    </div>
 
-
-    <!-- 🔥 NAVBAR TÁCH RIÊNG -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container nav-inner">
 
+            <!-- HAMBURGER (mobile) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- MENU -->
             <div class="menu">
                 <a class="active" th:href="@{/}">Trang chủ</a>
                 <a th:href="@{/products}">Sản phẩm</a>
@@ -39,11 +45,9 @@
                 <a th:href="@{/contact}">Liên hệ</a>
             </div>
 
-            <a class="cta" th:href="@{/contact}">
-                Nhận báo giá
-            </a>
-
         </div>
     </nav>
+
+</header>
 
 </th:block>
