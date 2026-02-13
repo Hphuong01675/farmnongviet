@@ -14,10 +14,10 @@ public class ContactController {
 
         model.addAttribute("companyName", "Farm Nông Việt");
         model.addAttribute("phone", "84798164267");
-        model.addAttribute("email", "contact@farmnongviet.com");
+        model.addAttribute("email", "bachhoangngan.vn@gmail.com");
         model.addAttribute("website", "www.farmnongviet.com");
         model.addAttribute("address",
-                "83/19 Đường 22, Phường Phước Long B, TP. Thủ Đức, TP.HCM");
+                "21 Trường Công Định, Phường Tân Bình, Thành phố Hồ Chí Minh");
 
         return "layout/base";
     }
