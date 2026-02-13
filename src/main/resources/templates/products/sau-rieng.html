@@ -12,13 +12,13 @@
             <div class="gallery">
 
                 <img id="mainImage"
-                     src="/images/products/saurieng/saurieng1.jpg"
+                     src="/images/products/saurieng/sau1.jpg"
                      class="main-image">
 
                 <div class="thumbs">
 
                     <img th:each="i : ${#numbers.sequence(1,10)}"
-                         th:src="@{'/images/products/saurieng/saurieng' + ${i} + '.jpg'}"
+                         th:src="@{'/images/products/saurieng/sau' + ${i} + '.jpg'}"
                          onclick="changeImg(this)">
 
                 </div>
@@ -214,9 +214,15 @@
                     </span>
                 </p>
 
-                <p><b>Address:</b> Thu Duc City, Ho Chi Minh, Vietnam</p>
-                <p><b>Phone:</b> +84 xxx xxx xxx</p>
-                <p><b>Email:</b> contact@bth.com</p>
+                <p>
+						<b>Address:</b> 21 Trương Công Định, Tân Bình, Tp Hồ Chí Minh
+					</p>
+					<p>
+						<b>Phone:</b> +84 798 164 267
+					</p>
+					<p>
+						<b>Email:</b> bachhoangngan.vn@gmail.com
+					</p>
 
             </div>
 
